@@ -1,0 +1,25 @@
+package br.com.tiacademy.vendas.converter;
+
+import br.com.tiacademy.vendas.core.crud.CrudConverter;
+import br.com.tiacademy.vendas.domain.Cliente;
+import br.com.tiacademy.vendas.dto.ClienteDTO;
+
+public class PedidoConverter implements CrudConverter<Pedido, PedidoDTO> {
+	@Override
+	public PedidoDTO entidadeParaDto(Pedido entidade) {
+		var dto = new PedidoDTO();
+		dto.setId(entidade.getId());
+		dto.setNome(entidade.getNome());
+		
+		return dto;
+	}
+
+	@Override
+	public Pedido dtoParaEntidade(PedidoDTO dto) {
+		var pedido = new Pedido();
+		pedido.setId(dto.getId());
+		pedido.setNome(dto.getNome());
+		
+		return pedido;
+	}
+}

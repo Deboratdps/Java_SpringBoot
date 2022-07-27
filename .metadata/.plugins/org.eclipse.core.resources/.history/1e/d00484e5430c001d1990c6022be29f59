@@ -1,0 +1,18 @@
+package br.com.tiacademy.vendas.dto;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+import javax.persistence.ManyToOne;
+
+import br.com.tiacademy.vendas.domain.Cliente;
+import br.com.tiacademy.vendas.domain.Vendedor;
+
+public class PedidoDTO implements Serializable {
+//	private Long id;
+//	private LocalDate data;
+//	private BigDecimal valor;
+//	private Vendedor vendedor;
+//	private Cliente cliente;
+}

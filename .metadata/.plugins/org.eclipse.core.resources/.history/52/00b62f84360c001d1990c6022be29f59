@@ -1,0 +1,8 @@
+package br.com.tiacademy.vendas.dto;
+
+public class VendedorDTO {
+	private Long id;
+	private String nome;
+	//private String email;
+	//private String senha;
+}

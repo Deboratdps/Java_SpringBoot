@@ -1,0 +1,7 @@
+package br.com.tiacademy.vendas.converter;
+
+import br.com.tiacademy.vendas.core.crud.CrudConverter;
+
+public class VendedorConverter implements CrudConverter<Vendedor, VendedorDTO>{
+	
+}
